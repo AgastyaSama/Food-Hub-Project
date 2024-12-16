@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>Web Designing Project</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script>
+      // JavaScript function to validate the form
+      function validateForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        
+        // Check if username or password is empty
+        if (username === "" || password === "") {
+          alert("Both fields are required.");
+          return false;
+        }
+        
+        // If everything is okay, allow form submission
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Epilogue, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:px-4 @[480px]:py-3">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-white @[480px]:rounded-xl min-h-80"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/1a315549-a590-4228-be3c-49090de91056.png");'
+                ></div>
+              </div>
+            </div>
+            <h1 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-center pb-3 pt-5">Log in or create an account</h1>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Username</p>
+                <input
+                  id="username"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#f2f2f2] focus:border-none h-14 placeholder:text-[#757575] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Password</p>
+                <input
+                  id="password"
+                  type="password"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#f2f2f2] focus:border-none h-14 placeholder:text-[#757575] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                onclick="return validateForm()"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-white text-[#141414] text-sm font-bold leading-normal tracking-[0.015em]"
+              ><a href="WDproject.html">
+                <span class="truncate">Log in</span></a>
+              </button>
+            </div>
+            <p class="text-[#757575] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center">or</p>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#f2f2f2] text-[#141414] gap-2 pl-4 text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <div class="text-[#141414]" data-icon="GoogleLogo" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M224,128a96,96,0,1,1-21.95-61.09,8,8,0,1,1-12.33,10.18A80,80,0,1,0,207.6,136H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128Z"></path>
+                  </svg>
+                </div>
+                <span class="truncate">Continue with Google</span>
+              </button>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#f2f2f2] text-[#141414] gap-2 pl-4 text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <div class="text-[#141414]" data-icon="FacebookLogo" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="truncate">Continue with Facebook</span>
+              </button>
+            </div>
+            <p class="text-[#757575] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">Don't have an account?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
